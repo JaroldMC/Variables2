@@ -79,6 +79,7 @@
             this.btnVerificar.TabIndex = 4;
             this.btnVerificar.Text = "Verificar";
             this.btnVerificar.UseVisualStyleBackColor = false;
+            this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
             // 
             // lblVariableLocal
             // 

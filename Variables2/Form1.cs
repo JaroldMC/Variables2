@@ -16,5 +16,10 @@ namespace Variables2
         {
             InitializeComponent();
         }
+
+        private void btnVerificar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
