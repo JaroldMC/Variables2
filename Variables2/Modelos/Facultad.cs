@@ -9,10 +9,10 @@ namespace Variables2.Modelos
     public class Facultad
     {
         public String Nombre;
-        public String Codiigo;
+        public String Codigo;
         public String MostrarDatos()
         {
-            return "Facultad: " + Nombre + "- Codigo: " + Codiigo;
+            return "Facultad: " + Nombre + "- Codigo: " + Codigo;
         }
     }
 }
