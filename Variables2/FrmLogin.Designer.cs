@@ -1,6 +1,6 @@
 ﻿namespace Variables2
 {
-    partial class pdfloyal
+    partial class FrmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -90,7 +90,7 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // pdfloyal
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -103,10 +103,10 @@
             this.Controls.Add(this.tbUsuario);
             this.Controls.Add(this.lblUser);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "pdfloyal";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "pdfloyal";
+            this.Text = "FrmLogin";
             this.ResumeLayout(false);
             this.PerformLayout();
 

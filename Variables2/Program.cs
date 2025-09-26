@@ -16,7 +16,13 @@ namespace Variables2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new pdfloyal());
+            using (FrmLogin Login = new FrmLogin())
+            {
+                if (Login.ShowDialog() == DialogResult.OK)
+                {
+                    Application.Run(new FrmPrincipal());
+                }
+            }
         }
     }
 }
