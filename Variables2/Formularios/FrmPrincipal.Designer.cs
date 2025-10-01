@@ -35,6 +35,7 @@
             this.eToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblFecha = new System.Windows.Forms.ToolStripStatusLabel();
+            this.edadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -64,12 +65,14 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // catalogosToolStripMenuItem
             // 
+            this.catalogosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.edadesToolStripMenuItem});
             this.catalogosToolStripMenuItem.Name = "catalogosToolStripMenuItem";
             this.catalogosToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
             this.catalogosToolStripMenuItem.Text = "Catalogos";
@@ -94,8 +97,15 @@
             // lblFecha
             // 
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(151, 20);
-            this.lblFecha.Text = "toolStripStatusLabel1";
+            this.lblFecha.Size = new System.Drawing.Size(47, 20);
+            this.lblFecha.Text = "Fecha";
+            // 
+            // edadesToolStripMenuItem
+            // 
+            this.edadesToolStripMenuItem.Name = "edadesToolStripMenuItem";
+            this.edadesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.edadesToolStripMenuItem.Text = "Edades";
+            this.edadesToolStripMenuItem.Click += new System.EventHandler(this.edadesToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -127,5 +137,6 @@
         private System.Windows.Forms.ToolStripMenuItem eToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lblFecha;
+        private System.Windows.Forms.ToolStripMenuItem edadesToolStripMenuItem;
     }
 }

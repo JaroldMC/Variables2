@@ -26,6 +26,11 @@ namespace Variables2
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            Logear();  
+        }
+
+        private void Logear()
+        {
             if (Login(tbUsuario.Text, tbPassword.Text))
             {
                 this.DialogResult = DialogResult.OK;
@@ -53,10 +58,18 @@ namespace Variables2
                 
                 
                 
-                
         private Boolean Login(String Username, String password)
         {
-            return Username.Equals("admin") && password.Equals("admin");
+            return Username.Equals("admin") && password.Equals("admin"); 
+        }
+
+        private void tbPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Logear();
+            }
+             
         }
     }
 }
