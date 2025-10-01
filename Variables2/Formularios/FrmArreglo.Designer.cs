@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.gbEdades = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbEdades = new System.Windows.Forms.TextBox();
-            this.lbEdades = new System.Windows.Forms.ListBox();
-            this.lblPromedio = new System.Windows.Forms.Label();
-            this.lblMayor = new System.Windows.Forms.Label();
             this.lblMenor = new System.Windows.Forms.Label();
+            this.lblMayor = new System.Windows.Forms.Label();
+            this.lblPromedio = new System.Windows.Forms.Label();
+            this.lbEdades = new System.Windows.Forms.ListBox();
+            this.tbEdades = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.gbEdades.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,32 +52,25 @@
             this.gbEdades.TabIndex = 0;
             this.gbEdades.TabStop = false;
             this.gbEdades.Text = "Edades: 0";
+            this.gbEdades.Enter += new System.EventHandler(this.gbEdades_Enter);
             // 
-            // label1
+            // lblMenor
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ingrese la edad:";
+            this.lblMenor.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblMenor.Location = new System.Drawing.Point(20, 476);
+            this.lblMenor.Name = "lblMenor";
+            this.lblMenor.Size = new System.Drawing.Size(160, 48);
+            this.lblMenor.TabIndex = 5;
+            this.lblMenor.Text = "Menor: 0";
             // 
-            // tbEdades
+            // lblMayor
             // 
-            this.tbEdades.Location = new System.Drawing.Point(23, 55);
-            this.tbEdades.Name = "tbEdades";
-            this.tbEdades.Size = new System.Drawing.Size(161, 22);
-            this.tbEdades.TabIndex = 1;
-            this.tbEdades.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbEdades_KeyDown);
-            // 
-            // lbEdades
-            // 
-            this.lbEdades.FormattingEnabled = true;
-            this.lbEdades.ItemHeight = 16;
-            this.lbEdades.Location = new System.Drawing.Point(23, 96);
-            this.lbEdades.Name = "lbEdades";
-            this.lbEdades.Size = new System.Drawing.Size(161, 260);
-            this.lbEdades.TabIndex = 2;
+            this.lblMayor.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblMayor.Location = new System.Drawing.Point(20, 428);
+            this.lblMayor.Name = "lblMayor";
+            this.lblMayor.Size = new System.Drawing.Size(160, 48);
+            this.lblMayor.TabIndex = 4;
+            this.lblMayor.Text = "Mayor: 0";
             // 
             // lblPromedio
             // 
@@ -89,23 +82,31 @@
             this.lblPromedio.Text = "Promedio: 0";
             this.lblPromedio.Click += new System.EventHandler(this.lblPromedio_Click);
             // 
-            // lblMayor
+            // lbEdades
             // 
-            this.lblMayor.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblMayor.Location = new System.Drawing.Point(20, 428);
-            this.lblMayor.Name = "lblMayor";
-            this.lblMayor.Size = new System.Drawing.Size(160, 48);
-            this.lblMayor.TabIndex = 4;
-            this.lblMayor.Text = "Mayor: 0";
+            this.lbEdades.FormattingEnabled = true;
+            this.lbEdades.ItemHeight = 16;
+            this.lbEdades.Location = new System.Drawing.Point(23, 96);
+            this.lbEdades.Name = "lbEdades";
+            this.lbEdades.Size = new System.Drawing.Size(161, 260);
+            this.lbEdades.TabIndex = 2;
             // 
-            // lblMenor
+            // tbEdades
             // 
-            this.lblMenor.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblMenor.Location = new System.Drawing.Point(20, 476);
-            this.lblMenor.Name = "lblMenor";
-            this.lblMenor.Size = new System.Drawing.Size(160, 48);
-            this.lblMenor.TabIndex = 5;
-            this.lblMenor.Text = "Menor: 0";
+            this.tbEdades.Location = new System.Drawing.Point(23, 55);
+            this.tbEdades.Name = "tbEdades";
+            this.tbEdades.Size = new System.Drawing.Size(161, 22);
+            this.tbEdades.TabIndex = 1;
+            this.tbEdades.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbEdades_KeyDown);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Ingrese la edad:";
             // 
             // FrmArreglo
             // 

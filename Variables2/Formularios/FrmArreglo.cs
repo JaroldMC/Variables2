@@ -25,19 +25,29 @@ namespace Variables2.Formularios
 
         private void tbEdades_KeyDown(object sender, KeyEventArgs e)
         {
-           int edad = int.Parse(tbEdades.Text);
-            Arreglo.edad[Arreglo.pos] = edad;
+           if (e.KeyCode == Keys.Enter)
+            {
+                int edad = int.Parse(tbEdades.Text);
+                if (Arreglo.pos <= 10)
+                    Arreglo.edad[Arreglo.pos++] = edad;
+                else MessageBox.Show("No se pueden agregar más elementos", "Arreglo lleno", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                llenarListado();
 
 
         }
         public void llenarListado()
         {
-            lbEdades.Items.Clear();
+            lbEdades.DataSource = null;
             lbEdades.DataSource = Arreglo.edad;
             lbEdades.Refresh();
-            gbEdades text = "Edades: " + Arreglo.edad.Length;
+            gbEdades.Text = "Edades: " + Arreglo.edad.Length;
             tbEdades.Text = "";
             tbEdades.Focus();
+        }
+
+        private void gbEdades_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
