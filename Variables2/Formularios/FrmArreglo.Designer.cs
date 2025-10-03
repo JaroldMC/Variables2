@@ -36,14 +36,14 @@
             this.tbEdades = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblMayoresDeEdad = new System.Windows.Forms.Label();
-            this.tp = new System.Windows.Forms.Label();
+            this.lblMenorDeEdad = new System.Windows.Forms.Label();
             this.gbEdades.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbEdades
             // 
             this.gbEdades.BackColor = System.Drawing.Color.Yellow;
-            this.gbEdades.Controls.Add(this.tp);
+            this.gbEdades.Controls.Add(this.lblMenorDeEdad);
             this.gbEdades.Controls.Add(this.lblMayoresDeEdad);
             this.gbEdades.Controls.Add(this.lblMenor);
             this.gbEdades.Controls.Add(this.lblMayor);
@@ -128,14 +128,14 @@
             this.lblMayoresDeEdad.Text = "Mayores de edad:";
             this.lblMayoresDeEdad.Click += new System.EventHandler(this.lblMayoresDeEdad_Click);
             // 
-            // tp
+            // lblMenorDeEdad
             // 
-            this.tp.BackColor = System.Drawing.Color.Yellow;
-            this.tp.Location = new System.Drawing.Point(24, 556);
-            this.tp.Name = "tp";
-            this.tp.Size = new System.Drawing.Size(160, 48);
-            this.tp.TabIndex = 7;
-            this.tp.Text = "Menor de edad: ";
+            this.lblMenorDeEdad.BackColor = System.Drawing.Color.Yellow;
+            this.lblMenorDeEdad.Location = new System.Drawing.Point(24, 556);
+            this.lblMenorDeEdad.Name = "lblMenorDeEdad";
+            this.lblMenorDeEdad.Size = new System.Drawing.Size(160, 48);
+            this.lblMenorDeEdad.TabIndex = 7;
+            this.lblMenorDeEdad.Text = "Menor de edad: ";
             // 
             // FrmArreglo
             // 
@@ -161,7 +161,7 @@
         private System.Windows.Forms.ListBox lbEdades;
         private System.Windows.Forms.Label lblMayor;
         private System.Windows.Forms.Label lblMenor;
-        private System.Windows.Forms.Label tp;
+        private System.Windows.Forms.Label lblMenorDeEdad;
         private System.Windows.Forms.Label lblMayoresDeEdad;
     }
 }

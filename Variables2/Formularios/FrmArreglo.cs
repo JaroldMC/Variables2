@@ -60,7 +60,7 @@ namespace Variables2.Formularios
             lblMayor.Text = "Mayor: " + Arreglo.GetEdadMaxima();
             lblMenor.Text = "Menor: " + Arreglo.GetedadMinima();
             lblMayoresDeEdad.Text = "Mayor de edad:" + Arreglo.GetMayorEdad();
-            lblManoresDeEdad.Text = "Manor de edad:" + Arreglo.GetMenoresEdad();
+            lblMenorDeEdad.Text = "Menor de edad: " + Arreglo.GetMenorDeEdad();
         }
 
         private void lblMayor_Click(object sender, EventArgs e)

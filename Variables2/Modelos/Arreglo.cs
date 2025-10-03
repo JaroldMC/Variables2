@@ -79,7 +79,7 @@ namespace Variables2.Modelos
         {
             int menorEdad = 0;
             foreach (int edad in edades)
-                if (edad <= 18 && edad <= 0)
+                if (edad < 18 && edad > 0)
                 {
                     menorEdad++;
                 }
