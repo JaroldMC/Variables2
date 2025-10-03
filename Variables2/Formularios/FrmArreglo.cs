@@ -25,27 +25,55 @@ namespace Variables2.Formularios
 
         private void tbEdades_KeyDown(object sender, KeyEventArgs e)
         {
-           if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 int edad = int.Parse(tbEdades.Text);
                 if (Arreglo.pos <= 10)
-                    Arreglo.edad[Arreglo.pos++] = edad;
+                    Arreglo.edades[Arreglo.pos++] = edad;
                 else MessageBox.Show("No se pueden agregar más elementos", "Arreglo lleno", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 llenarListado();
+                MostrarCalculos();
 
-
+            }
         }
+
+
+        
         public void llenarListado()
         {
             lbEdades.DataSource = null;
-            lbEdades.DataSource = Arreglo.edad;
+            lbEdades.DataSource = Arreglo.edades;
             lbEdades.Refresh();
-            gbEdades.Text = "Edades: " + Arreglo.edad.Length;
+            gbEdades.Text = "Edades: " + Arreglo.edades.Length;
             tbEdades.Text = "";
             tbEdades.Focus();
         }
 
         private void gbEdades_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        public void MostrarCalculos()
+        {
+            lblPromedio.Text = "Promedio:" + Arreglo.GetPromedio();
+            lblMayor.Text = "Mayor: " + Arreglo.GetEdadMaxima();
+            lblMenor.Text = "Menor: " + Arreglo.GetedadMinima();
+            lblMayoresDeEdad.Text = "Mayor de edad:" + Arreglo.GetMayorEdad();
+            lblManoresDeEdad.Text = "Manor de edad:" + Arreglo.GetMenoresEdad();
+        }
+
+        private void lblMayor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMenor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMayoresDeEdad_Click(object sender, EventArgs e)
         {
 
         }

@@ -35,20 +35,25 @@
             this.lbEdades = new System.Windows.Forms.ListBox();
             this.tbEdades = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblMayoresDeEdad = new System.Windows.Forms.Label();
+            this.tp = new System.Windows.Forms.Label();
             this.gbEdades.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbEdades
             // 
+            this.gbEdades.BackColor = System.Drawing.Color.Yellow;
+            this.gbEdades.Controls.Add(this.tp);
+            this.gbEdades.Controls.Add(this.lblMayoresDeEdad);
             this.gbEdades.Controls.Add(this.lblMenor);
             this.gbEdades.Controls.Add(this.lblMayor);
             this.gbEdades.Controls.Add(this.lblPromedio);
             this.gbEdades.Controls.Add(this.lbEdades);
             this.gbEdades.Controls.Add(this.tbEdades);
             this.gbEdades.Controls.Add(this.label1);
-            this.gbEdades.Location = new System.Drawing.Point(34, 41);
+            this.gbEdades.Location = new System.Drawing.Point(34, 12);
             this.gbEdades.Name = "gbEdades";
-            this.gbEdades.Size = new System.Drawing.Size(219, 516);
+            this.gbEdades.Size = new System.Drawing.Size(219, 634);
             this.gbEdades.TabIndex = 0;
             this.gbEdades.TabStop = false;
             this.gbEdades.Text = "Edades: 0";
@@ -56,34 +61,37 @@
             // 
             // lblMenor
             // 
-            this.lblMenor.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblMenor.BackColor = System.Drawing.Color.Yellow;
             this.lblMenor.Location = new System.Drawing.Point(20, 476);
             this.lblMenor.Name = "lblMenor";
             this.lblMenor.Size = new System.Drawing.Size(160, 48);
             this.lblMenor.TabIndex = 5;
             this.lblMenor.Text = "Menor: 0";
+            this.lblMenor.Click += new System.EventHandler(this.lblMenor_Click);
             // 
             // lblMayor
             // 
-            this.lblMayor.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblMayor.BackColor = System.Drawing.Color.Yellow;
             this.lblMayor.Location = new System.Drawing.Point(20, 428);
             this.lblMayor.Name = "lblMayor";
             this.lblMayor.Size = new System.Drawing.Size(160, 48);
             this.lblMayor.TabIndex = 4;
             this.lblMayor.Text = "Mayor: 0";
+            this.lblMayor.Click += new System.EventHandler(this.lblMayor_Click);
             // 
             // lblPromedio
             // 
-            this.lblPromedio.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblPromedio.BackColor = System.Drawing.Color.Yellow;
             this.lblPromedio.Location = new System.Drawing.Point(24, 380);
             this.lblPromedio.Name = "lblPromedio";
-            this.lblPromedio.Size = new System.Drawing.Size(160, 48);
+            this.lblPromedio.Size = new System.Drawing.Size(156, 48);
             this.lblPromedio.TabIndex = 3;
             this.lblPromedio.Text = "Promedio: 0";
             this.lblPromedio.Click += new System.EventHandler(this.lblPromedio_Click);
             // 
             // lbEdades
             // 
+            this.lbEdades.BackColor = System.Drawing.Color.Yellow;
             this.lbEdades.FormattingEnabled = true;
             this.lbEdades.ItemHeight = 16;
             this.lbEdades.Location = new System.Drawing.Point(23, 96);
@@ -93,6 +101,7 @@
             // 
             // tbEdades
             // 
+            this.tbEdades.BackColor = System.Drawing.Color.Yellow;
             this.tbEdades.Location = new System.Drawing.Point(23, 55);
             this.tbEdades.Name = "tbEdades";
             this.tbEdades.Size = new System.Drawing.Size(161, 22);
@@ -102,11 +111,31 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Yellow;
             this.label1.Location = new System.Drawing.Point(20, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ingrese la edad:";
+            // 
+            // lblMayoresDeEdad
+            // 
+            this.lblMayoresDeEdad.BackColor = System.Drawing.Color.Yellow;
+            this.lblMayoresDeEdad.Location = new System.Drawing.Point(20, 524);
+            this.lblMayoresDeEdad.Name = "lblMayoresDeEdad";
+            this.lblMayoresDeEdad.Size = new System.Drawing.Size(160, 48);
+            this.lblMayoresDeEdad.TabIndex = 6;
+            this.lblMayoresDeEdad.Text = "Mayores de edad:";
+            this.lblMayoresDeEdad.Click += new System.EventHandler(this.lblMayoresDeEdad_Click);
+            // 
+            // tp
+            // 
+            this.tp.BackColor = System.Drawing.Color.Yellow;
+            this.tp.Location = new System.Drawing.Point(24, 556);
+            this.tp.Name = "tp";
+            this.tp.Size = new System.Drawing.Size(160, 48);
+            this.tp.TabIndex = 7;
+            this.tp.Text = "Menor de edad: ";
             // 
             // FrmArreglo
             // 
@@ -132,5 +161,7 @@
         private System.Windows.Forms.ListBox lbEdades;
         private System.Windows.Forms.Label lblMayor;
         private System.Windows.Forms.Label lblMenor;
+        private System.Windows.Forms.Label tp;
+        private System.Windows.Forms.Label lblMayoresDeEdad;
     }
 }

@@ -32,10 +32,10 @@
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catalogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.edadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblFecha = new System.Windows.Forms.ToolStripStatusLabel();
-            this.edadesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -77,6 +77,13 @@
             this.catalogosToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
             this.catalogosToolStripMenuItem.Text = "Catalogos";
             // 
+            // edadesToolStripMenuItem
+            // 
+            this.edadesToolStripMenuItem.Name = "edadesToolStripMenuItem";
+            this.edadesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.edadesToolStripMenuItem.Text = "Edades";
+            this.edadesToolStripMenuItem.Click += new System.EventHandler(this.edadesToolStripMenuItem_Click);
+            // 
             // eToolStripMenuItem
             // 
             this.eToolStripMenuItem.Name = "eToolStripMenuItem";
@@ -100,17 +107,11 @@
             this.lblFecha.Size = new System.Drawing.Size(47, 20);
             this.lblFecha.Text = "Fecha";
             // 
-            // edadesToolStripMenuItem
-            // 
-            this.edadesToolStripMenuItem.Name = "edadesToolStripMenuItem";
-            this.edadesToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.edadesToolStripMenuItem.Text = "Edades";
-            this.edadesToolStripMenuItem.Click += new System.EventHandler(this.edadesToolStripMenuItem_Click);
-            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Blue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
